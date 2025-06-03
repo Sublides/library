@@ -23,8 +23,10 @@ jobs:
           fetch-depth: 0 # Fetch all history for git info
       - name: Git Submodule Update
         run: |
-            git pull --recurse-submodules
-            git submodule update --remote --recursive
+            cd ./content
+            git cheackout master
+            git pull
+            cd -
       - run: ls ./content
       - uses: actions/setup-node@v4
         with:
