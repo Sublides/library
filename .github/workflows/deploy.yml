@@ -21,12 +21,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git info
-      - name: Git Submodule Update
-        run: |
-            cd ./content
-            git checkout master
-            git pull
-            cd ../
       - run: ls ./content
       - uses: actions/setup-node@v4
         with:
