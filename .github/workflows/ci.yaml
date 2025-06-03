@@ -23,6 +23,7 @@ jobs:
         with:
           fetch-depth: 0
           submodules: recursive
+      - run: ls ./content
 
       - name: Setup Node
         uses: actions/setup-node@v4
