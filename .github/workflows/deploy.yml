@@ -24,7 +24,7 @@ jobs:
       - name: Git Submodule Update
         run: |
             cd ./content
-            git cheackout master
+            git checkout master
             git pull
             cd -
       - run: ls ./content
