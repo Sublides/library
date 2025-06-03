@@ -26,7 +26,7 @@ jobs:
             cd ./content
             git checkout master
             git pull
-            cd -
+            cd ../
       - run: ls ./content
       - uses: actions/setup-node@v4
         with:
