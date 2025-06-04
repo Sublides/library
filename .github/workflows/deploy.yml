@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for git info
           submodules: true
       - name: Update submodule
-        run:|
+        run: |
           cd ./content
           git pull
           git checkout master
