@@ -28,8 +28,8 @@ jobs:
           git fetch
           git checkout master
           git pull
+          git status
           cd -
-          ls ./content
       - uses: actions/setup-node@v4
         with:
           node-version: 22
