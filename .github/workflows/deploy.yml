@@ -21,8 +21,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git info
-          submodules: recursive
-      - run: ls ./content
+          submodules: true
+      - run:|
+          git submodule update --init --recursive
+          git submodule update --remote --recursive
+          ls ./content
       - uses: actions/setup-node@v4
         with:
           node-version: 22
