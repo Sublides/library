@@ -1,9 +1,7 @@
 name: Deploy Quartz site to GitHub Pages
  
 on:
-  push:
-    branches:
-      - '*'
+  workflow_dispatch
  
 permissions:
   contents: read
@@ -22,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for git info
           submodules: true
-      - name: Update submodule
+      - name: Update content
         run: |
           cd ./content
           git fetch
