@@ -1,15 +1,7 @@
 name: Deploy Quartz site to GitHub Pages
  
 on:
-  workflow_dispatch:
-      inputs:
-          environment:
-            type: choice
-            options:
-              - staging
-              - production
-            default: staging
-            description: 'Select deployment environment'
+  workflow_dispatch
  
 permissions:
   contents: read
