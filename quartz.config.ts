@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "ru-RU",
+    locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["99.System", "private", "templates", ".obsidian"],
     defaultDateType: "modified",
@@ -71,6 +71,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
