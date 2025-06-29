@@ -1,4 +1,4 @@
 [submodule "content"]
 	path = content
-	url = git@github.com:D20Diaries/Ervindell.git
+	url = git@github.com:ttlogs/ErvinLogs.git
 	branch = master
